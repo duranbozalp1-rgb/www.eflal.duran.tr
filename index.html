@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duran & Eflal 💫 Kayan Yıldızlar Aşkı</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-bg">
+        <div class="shooting-stars"></div>
+        <div class="hearts-float"></div>
+        <div class="mist-clouds"></div>
+        <div class="emoji-rain"></div>
+    </div>
+
+    <div class="container">
+        <header class="hero">
+            <h1 class="romantic-title">Duran & Eflal 💕</h1>
+            <p class="subtitle">Kayan Yıldızlar Gibi Sonsuz Hikayemiz</p>
+        </header>
+
+        <section class="timeline">
+            <div class="event-card">
+                <h3>İlk Tanışma 🌌</h3>
+                <p>22 Eylül 2025</p>
+                <p id="days-meet">Hesleniyor...</p>
+            </div>
+            <div class="event-card">
+                <h3>Sevgili Olduk ❤️</h3>
+                <p>22 Ekim 2025</p>
+                <p id="days-couple">Hesleniyor...</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Güzel Anılarımız 💕</h2>
+            <div class="photo-grid">
+                <img src="images/memory1.jpg" alt="Anı 1" class="grid-photo">
+                <img src="images/memory2.jpg" alt="Anı 2" class="grid-photo">
+                <img src="images/memory3.jpg" alt="Anı 3" class="grid-photo">
+                <img src="images/memory4.jpg" alt="Anı 4" class="grid-photo">
+                <img src="images/memory5.jpg" alt="Anı 5" class="grid-photo">
+                <img src="images/memory6.jpg" alt="Anı 6" class="grid-photo">
+            </div>
+        </section>
+
+        <section class="countdown">
+            <h2>Eflal'imin 18. Yaşına Geri Sayım 🎂</h2>
+            <div id="countdown-anim">Hesleniyor... 💖</div>
+            <canvas id="particles-canvas"></canvas>
+        </section>
+
+        <section class="poem-section">
+            <h2>Sana Şiirim 💭</h2>
+            <div class="poem-box" onclick="revealPoem()">
+                <p class="poem-trigger">Tıkla ve Oku 💕</p>
+                <div id="poem-content" class="poem-content">
+                    <p class="handwritten-line">Kocaman bir çiçek bahçesinin içinde</p>
+                    <p class="handwritten-line">Papatyaların arasında yürür gibiyim.</p>
+                    <p class="handwritten-line">Senin yanında gökyüzünde güneş,</p>
+                    <p class="handwritten-line">Karşımda deniz var.</p>
+                    <p class="handwritten-line">Sanki seninle birlikte bu dünya hep</p>
+                    <p class="handwritten-line">Çilek kokuyor sevgilim.</p>
+                    <p class="handwritten-line">Seninleyken bulutlar bembeyaz şarkılar,</p>
+                    <p class="handwritten-line">Aşk dolu... 🌸💕</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes">
+            <h2>Aşk Sözlerimiz 💌</h2>
+            <div class="quotes-carousel">
+                <div class="quote-item active">"Kayan yıldızlar gibi dileklerim seninle gerçek oluyor." - Duran ⭐</div>
+                <div class="quote-item">"Seninle her gece sonsuz bir rüya." - Eflal 🌙</div>
+                <div class="quote-item">"Aşkımız çilek tatlısı kadar tatlı, papatya kadar saf."</div>
+                <div class="quote-item">"Deniz gibi derin, güneş gibi sıcak sevgimiz."</div>
+            </div>
+            <button class="carousel-btn prev-quote" onclick="prevQuote()">&#10094;</button>
+            <button class="carousel-btn next-quote" onclick="nextQuote()">&#10095;</button>
+        </section>
+
+        <section class="new-poem-section">
+            <h2>Sen Benim Sessiz Şiirimsin 💭</h2>
+            <div class="new-poem-box" onclick="revealNewPoem()">
+                <p class="new-poem-trigger">Tıkla ve Hisset 💕</p>
+                <div id="new-poem-content" class="new-poem-content">
+                    <p class="new-handwritten-line">Bir gülüşün var ya, gökyüzü bile kıskanır,</p>
+                    <p class="new-handwritten-line">Bir bakışın var, kalbimi susturur, anlar…</p>
+                    <p class="new-handwritten-line">Adını duysam, yüreğim yerinden taşar,</p>
+                    <p class="new-handwritten-line">Sanki her hecede sen varsın, Eflal’im, aşka karışan.</p>
+                    <p class="new-handwritten-line">Gece olur, yıldızlar seninle parlar,</p>
+                    <p class="new-handwritten-line">Ay bile perde arkasından bakar utanarak.</p>
+                    <p class="new-handwritten-line">Bir dokunuşun yeter, bin ömür yaşarım,</p>
+                    <p class="new-handwritten-line">Sensiz geçen an, ömrümden çalar azar azar.</p>
+                    <p class="new-handwritten-line">Rüzgâr bile adını fısıldar kulağıma,</p>
+                    <p class="new-handwritten-line">Kokun kalır tenimde, gidişinden sonra.</p>
+                    <p class="new-handwritten-line">Sen benim en güzel yanım, en sessiz duam,</p>
+                    <p class="new-handwritten-line">Ve bu kalp, her atışında “Eflal” der adınla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="letter-section">
+            <h2>Sürpriz Mektup Zamanı 💌</h2>
+            <div class="letter-container">
+                <div class="letter-box" onclick="openLetter()">
+                    <p class="letter-trigger">Mektubu Aç 💕</p>
+                    <div id="letter-content" class="letter-content">
+                        <p class="letter-line">Aşkımm,</p>
+                        <p class="letter-line">Sana ne zaman bir şey yazsam, kelimeler yetmiyor. Çünkü ne yazarsam yazayım, seni tam olarak anlatamıyor. Sanki her harf, senin güzelliğinin yanında eksik kalıyor. Ama yine de yazmak istiyorum… çünkü senin adını bir kâğıda bile yazmak, kalbime huzur veriyor.</p>
+                        <p class="letter-line">Biliyor musun, bazen sadece seni düşünürken bile gülümsüyorum. Sebepsiz, plansız, içimden geliyor. Kalbim kendi kendine seninle konuşuyor sanki. Gözlerini, sesini, o tatlı gülüşünü düşündükçe, içimde bir sıcaklık hissediyorum… dünyadaki her şey bir anda anlam kazanıyor.</p>
+                        <p class="letter-line">Seninle konuşmak, seni görmek, sana bir şey anlatmak bile ayrı bir mutluluk benim için. Hani bazı insanlar vardır ya, varlığı bile yeter… işte sen benim için öylesin.</p>
+                        <p class="letter-line">Belki her şeyi mükemmel yapamam, belki bazen kelimelerim karışır ama bilmeni isterim ki, kalbim her zaman sana doğru atıyor. Sen benim huzurum, en tatlı heyecanım, en güzel ihtimalimsin.</p>
+                        <p class="letter-line">Her sabah seni düşünerek uyanmak, her gece seni hayal ederek uyumak… işte benim en sevdiğim alışkanlık bu.</p>
+                        <p class="letter-line">Sevgiyle, içtenlikle, bütün kalbimle,</p>
+                        <p class="letter-line">Duran</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="song">
+            <h2>Şarkımız 🎶</h2>
+            <p>Cem Adrian & Hande Mehan - Sen Benim Şarkılarımsın (Official Klip)</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/brRnhthvnKs" frameborder="0" allowfullscreen></iframe>
+            <p>Sen de benim her nakaratımsın Eflal ❤️</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
